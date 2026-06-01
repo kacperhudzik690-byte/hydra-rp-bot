@@ -3715,5 +3715,7 @@ Reflect.defineProperty(DiscordJS.GuildEmoji.prototype, "convertToString", {
 //---------------------------------------------------------------------
 // Start Bot
 //---------------------------------------------------------------------
+const http = require('node:http');
+http.createServer((req, res) => res.end('Bot is running!')).listen(process.env.PORT || 3000);
 
 Files.startBot();
